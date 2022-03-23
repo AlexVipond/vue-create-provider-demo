@@ -1,9 +1,16 @@
 <template>
-  <main class="h-screen w-screen flex items-center justify-center bg-gray-900">
-    <h1 class="text-2xl tracking-widest font-bold uppercase text-gray-400">TITLE</h1>
-  </main>
+  <div class="h-screen w-screen flex flex-col gap-6 p-20 items-center bg-gray-100">
+    <Parent
+      :initialCount="42"
+      initialMessage="Hello world"
+      class="flex flex-col gap-6 p-8 bg-white rounded shadow-lg"
+    >
+      <Child class="w-full max-w-md flex flex-col gap-6 p-6 rounded shadow-md bg-green-100 text-green-900" />
+    </Parent>
+  </div>
 </template>
 
 <script setup lang="ts">
+import { Parent, Child } from './MyCompoundGroup'
 
 </script>
