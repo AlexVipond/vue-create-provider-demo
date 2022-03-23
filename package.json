@@ -12,6 +12,7 @@
     "vite": "^2.8.6"
   },
   "dependencies": {
+    "@alexvipond/vue-create-provider": "^0.0.1",
     "vue": "^3.2.31"
   }
 }
